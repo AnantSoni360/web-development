@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media screen and (orientation: potrait) {
+            body {
+                border: 2px solid purple;
+            }
+        }
+
+        @media only screen and (max-width:455px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        .boxes {
+            flex-direction: column;
+        }
+
+        /* @media not|only mediatype and (expression) CSS-Code;  */
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            margin: 32px;
+            padding: 23px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        i am a red body boy
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

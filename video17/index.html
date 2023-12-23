@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* element selector */
+        div{
+            background-color: red;
+        }
+        .anant{
+            background-color: yellow;
+        }
+        #soni{
+            background-color: blue;
+        }
+        div > p {
+            background-color: blue;
+        }
+        /* descendent selector */
+        div p{
+            background-color: rgb(61, 150, 55);
+        }
+        /* universal selector */
+        *{
+            color: brown;
+        }
+        /* pseudo slector */
+        a:visited{
+            color: aquamarine;
+        }
+        a:link{
+            color: purple;
+        }
+        a:active{
+            color: rgb(81, 43, 43);
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+        <main class="one"><p>the paragraph
+            <li>the points</li>
+        </main>
+        
+    </div>
+    <div class="selector"><p>the correct one</p></div>
+    <div class="anant">anant soni</div>
+    <div id="soni">soni ji</div>
+    <a href="https://www.google.com">go to google</a>
+    <a href="https://www.facebook.com">go to facebook</a>
+</body>
+</html>

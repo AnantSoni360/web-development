@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* if i comment it it will take the comma value */
+            /* --color:rgb(195, 0, 255); */
+            --color:rgb(195, 0, 255);
+            --seccolor:rgb(104, 154, 211);
+            --defpad:23px;
+            --defop:0.2;      
+        }
+        *{
+            margin: 0;
+            padding:0;
+
+        }
+        .nav{
+            background-color: var(--color,rgb(255, 0, 51));
+        }
+        ul{
+            display: flex;
+        }
+        ul li {
+            opacity:var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            margin: 0;
+            border: 12px solid var(--seccolor);
+        }
+        .container{
+            background-color:var(--seccolor);
+        }
+        ul li:first-child{
+            /* over writed value */
+            --color:rgb(213, 127, 22);
+            background-color: var(--color);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>HOme</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sapiente tenetur dignissimos maxime. Accusamus fugiat a magni eligendi accusantium veniam ratione autem incidunt dicta quibusdam. Harum qui, non iusto dolorem ad odio, culpa nam eveniet rem sunt ratione porro autem nobis, aspernatur velit nemo aliquam?
+    </div>
+    
+</body>
+</html>
